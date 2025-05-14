@@ -4,8 +4,6 @@ const App = () => {
   return (
     <>
       <Home />
-      {/* <Home title="home" /> */}
-      {/* <FullScreenBottomSheet /> */}
     </>
   );
 };

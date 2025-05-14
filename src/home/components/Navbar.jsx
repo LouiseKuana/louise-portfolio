@@ -1,12 +1,18 @@
 import "../styles/Navbar.css";
-import NavbarButton from "./NavbarButton.jsx";
-import {
-  User,
-  FolderSimple,
-  GithubLogo,
-  LinkedinLogo,
-  EnvelopeSimple,
-} from "phosphor-react";
+import { User, FolderSimple,  GithubLogo,  LinkedinLogo,  EnvelopeSimple} from "phosphor-react";
+
+export default function NavbarWithDuck() {
+  return (
+    <div className="relative w-[min(96vw,375px)]">
+      <div className=" w-full h-auto">
+        <img src="src/assets/louise+duck.gif" alt="Louise Duck"></img>
+      </div>
+      <div className="absolute bottom-0 w-full">
+        <Navbar />
+      </div>
+    </div>
+  );
+}
 
 function Navbar() {
   return (
@@ -22,4 +28,13 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+function NavbarButton({ icon: Icon }) {
+  return (
+    <>
+      <button className="btn-3d" id="btn-3d">
+        <Icon className="w-6 h-6 " />
+      </button>
+    </>
+  );
+}
+
