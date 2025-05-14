@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+    --color-reseda-green: #717946;
+    --color-apple-green: #b0b952;
+    --color-lemon-chiffon: #f2eeca;
+    --spacing-title: 4rem;
+    --spacing-img-width: min(96vw,344px);
+    --spacing-img-height: min(50vw,446px);
+}

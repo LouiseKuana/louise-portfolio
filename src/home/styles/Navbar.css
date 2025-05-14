@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@theme {
+  --color-blue-green: #47a1c8;
+  --color-paynes-gray: #4f748a;
+  --inset-shadow-navbar: 6px 4px 0 var(--color-paynes-gray)
+}

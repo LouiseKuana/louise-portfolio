@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-amaranth-pink: #ef93b2;
+  --color-orchid-pink: #f7b6cc;
+  --color-fuchsia-rose: #cd517a;
+  --color-lemon-chiffon: #f2eeca;
+  --inset-shadow-default: 4px 2px 0 var(--color-orchid-pink);
+  --inset-shadow-active: 4px 2px 0 var(--color-fuchsia-rose);
+}
+
+@layer components {
+  #btn-3d {
+    @apply bg-amaranth-pink p-3 rounded-full transition-all cursor-pointer text-lemon-chiffon;
+    box-shadow: var(--inset-shadow-default);
+  }
+  #btn-3d:hover {
+    @apply hover:translate-y-[-2px];
+  }
+  #btn-3d:active {
+    @apply active:translate-x-[4px] text-fuchsia-rose;
+    box-shadow: var(--inset-shadow-active);
+  }
+}
