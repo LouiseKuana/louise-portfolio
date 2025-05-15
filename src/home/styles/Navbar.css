@@ -11,11 +11,13 @@
   --inset-shadow-navbar: 6px 4px 0 var(--color-paynes-gray);
   --inset-shadow-default: 4px 2px 0 var(--color-orchid-pink);
   --inset-shadow-active: 4px 2px 0 var(--color-fuchsia-rose);
+  --spacing-img-duck-width: min(96vw,375px); 
+  --spacing-button-padding: min(3vw,12px);
 }
 
 @layer components {
   #btn-3d {
-    @apply bg-amaranth-pink p-3 rounded-full transition-all cursor-pointer text-lemon-chiffon;
+    @apply bg-amaranth-pink p-[var(--spacing-button-padding)] rounded-full transition-all cursor-pointer text-lemon-chiffon;
     box-shadow: var(--inset-shadow-default);
   }
   #btn-3d:hover {

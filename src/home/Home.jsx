@@ -3,6 +3,7 @@ import "./Home.css";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import NavbarWithDuck from "./components/Navbar";
+import Footer from "./components/Footer"
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
         <Header />
         <Main />
         <NavbarWithDuck/>
+        <Footer/>
       </div>
     </>
   );
