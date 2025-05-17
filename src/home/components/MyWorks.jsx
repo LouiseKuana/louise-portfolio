@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export default function Resume() {
+export default function MyWorks() {
   return (
     <motion.div
       initial={{ opacity: 0, y: 100 }}
@@ -8,13 +8,8 @@ export default function Resume() {
       transition={{ duration: 0.8, ease: "easeOut" }}
       className="mt-1 text-white font-mono text-lg"
     >
-      <div className="pt-24 px-4">
-        <p>
-          Hi! I'm Louise, a backend developer passionate about building clean
-          APIs...
-        </p>
-        {/* Your resume content here */}
-      </div>
+      <p>Hi! I'm Louise, a backend developer passionate about building clean APIs...</p>
+      {/* Your resume content here */}
     </motion.div>
   );
 }
