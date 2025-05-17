@@ -8,10 +8,13 @@ import Footer from "./components/Footer"
 function Home() {
   return (
     <>
-      <div className="bg-apple-green w-full h-screen text-white text-center font-mono items-center flex flex-col">
+      <div className="relative bg-apple-green dark:bg-reseda-green w-full h-screen text-white text-center font-mono items-center flex flex-col">
         <Header />
         <Main />
-        <NavbarWithDuck/>
+        <div className="flex-grow relative">
+<NavbarWithDuck/>
+        </div>
+        
         <Footer/>
       </div>
     </>

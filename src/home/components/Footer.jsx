@@ -12,7 +12,7 @@ function Footer() {
             Made with{" "}
             <Heart
               weight="fill"
-              className="mx-[2px] text-fuchsia-rose text-[min(3vw,16px)]"
+              className="mx-[2px] text-fuchsia-rose dark:text-amaranth-pink text-[min(3vw,16px)]"
             />{" "}
             and matcha
           </p>
