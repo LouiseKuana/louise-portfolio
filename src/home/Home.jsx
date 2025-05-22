@@ -10,6 +10,7 @@ import NavbarButton from "./components/NavbarButton";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
+import * as Tooltip from "@radix-ui/react-tooltip";
 import {
   User,
   FolderSimple,
@@ -20,7 +21,7 @@ import {
 } from "phosphor-react";
 
 export default function Home() {
-const [activeSection, setActiveSection] = useState(null);
+  const [activeSection, setActiveSection] = useState(null);
   const [isAnimating, setIsAnimating] = useState(false);
 
   // Ao clicar no menu, inicia animação da navbar + gif subindo
@@ -81,7 +82,7 @@ const [activeSection, setActiveSection] = useState(null);
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <Header/> 
+                  <Header />
                 </motion.header>
 
                 <motion.img
@@ -99,11 +100,31 @@ const [activeSection, setActiveSection] = useState(null);
         </motion.div>
 
         <motion.nav className="flex gap-4 px-6 py-3 bg-blue-green inset-shadow-navbar rounded-full cursor-pointer">
-          <NavbarButton icon={User} onClick={() => handleNavClick("about")}/>
-          <NavbarButton icon={FolderSimple} onClick={() => handleNavClick("works")}/>
-          <NavbarButton icon={EnvelopeSimple} onClick={() => handleNavClick("email")}/>
-          <NavbarButton icon={GithubLogo} onClick={() => window.open("https://github.com", "_blank")} />
-          <NavbarButton icon={LinkedinLogo} onClick={() => window.open("https://linkedin.com", "_blank")} />
+          <NavbarButton
+            title="About"
+            icon={User}
+            onClick={() => handleNavClick("about")}
+          />
+          <NavbarButton
+            title="My Projects"
+            icon={FolderSimple}
+            onClick={() => handleNavClick("works")}
+          />
+          <NavbarButton
+            title="Email"
+            icon={EnvelopeSimple}
+            onClick={() => handleNavClick("email")}
+          />
+          <NavbarButton
+            title="Github"
+            icon={GithubLogo}
+            onClick={() => window.open("https://github.com", "_blank")}
+          />
+          <NavbarButton
+            title="LinkedIn"
+            icon={LinkedinLogo}
+            onClick={() => window.open("https://linkedin.com", "_blank")}
+          />
         </motion.nav>
       </motion.div>
 
@@ -125,28 +146,43 @@ const [activeSection, setActiveSection] = useState(null);
                 <p className="text-lg text-pink-700 mb-4 font-delius">
                   Veja meus projetos fofinhos 💖
                 </p>
-                
+
                 <MyWorks />
               </div>
             )}
             {activeSection === "email" && (
               <p className="text-lg">email@email.com</p>
             )}
-
-            <motion.button
-              onClick={resetPage}
-              className="mt-8 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Voltar à tela inicial
-            </motion.button>
+            <Tooltip.Provider>
+              <Tooltip.Root>
+                <Tooltip.Trigger asChild>
+                  <motion.button
+                    onClick={resetPage}
+                    className="btn-3d"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <CaretDoubleDown className="w-6 h-6" />
+                  </motion.button>
+                </Tooltip.Trigger>
+                <Tooltip.Portal>
+                  <Tooltip.Content
+                    side="bottom"
+                    className="bg-apple-green dark:bg-reseda-green text-lemon-chiffon text-xs rounded-xl px-3 py-2 shadow-lg font-menlo animate-fade-in z-50 border border-lemon-chiffon"
+                    sideOffset={8}
+                  >
+                    Back Home
+                    <Tooltip.Arrow className="fill-lemon-chiffon" />
+                  </Tooltip.Content>
+                </Tooltip.Portal>
+              </Tooltip.Root>
+            </Tooltip.Provider>
           </motion.div>
         )}
       </AnimatePresence>
 
       {/* FOOTER */}
-     <Footer />
+      <Footer />
     </div>
   );
 }

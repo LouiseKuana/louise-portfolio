@@ -17,14 +17,14 @@
 }
 
 @layer components {
-  #btn-3d {
+  .btn-3d {
     @apply bg-amaranth-pink p-[var(--spacing-button-padding)] rounded-full transition-all cursor-pointer text-lemon-chiffon;
     box-shadow: var(--inset-shadow-default);
   }
-  #btn-3d:hover {
+  .btn-3d:hover {
     @apply hover:translate-y-[-2px];
   }
-  #btn-3d:active {
+  .btn-3d:active {
     @apply active:translate-x-[4px] text-fuchsia-rose;
     box-shadow: var(--inset-shadow-active);
   }
