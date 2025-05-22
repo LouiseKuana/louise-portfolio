@@ -13,7 +13,7 @@ import NavbarButton from "./NavbarButton";
 
 export default function NavbarWithDuck({ isDocked, onSelect }) {
   return (
-    <div className="relative w-[var(--spacing-img-duck-width)]">
+    <div className="relative w-[var(--spacing-img-duck-width)] pt-4">
       <div className="w-full h-auto">
         <Duck isDocked={isDocked} />
       </div>
@@ -21,10 +21,10 @@ export default function NavbarWithDuck({ isDocked, onSelect }) {
         <div className="bg-blue-green rounded-full px-8 py-2  justify-between items-center flex inset-shadow-navbar cursor-pointer">
           <NavbarButton icon={User} onClick={() => onSelect("resume")} />
           <NavbarButton icon={FolderSimple} onClick={() => onSelect("works")} />
-          <NavbarButton
+          {/* <NavbarButton
             icon={EnvelopeSimple}
             onClick={() => (window.location = "mailto:you@example.com")}
-          />
+          /> */}
         </div>
       </div>
     </div>

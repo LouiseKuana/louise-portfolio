@@ -1,11 +1,39 @@
 @import "tailwindcss";
 
 @theme {
+    --color-blue-green: #47a1c8;
+    --color-paynes-gray: #4f748a;
     --color-reseda-green: #717946;
     --color-apple-green: #b0b952;
     --color-lemon-chiffon: #f2eeca;
     --color-fuchsia-rose: #cd517a;
     --color-amaranth-pink: #ef93b2;
+    --color-orchid-pink: #f7b6cc;
     --spacing-padding-title: 3rem;
-    --spacing-lion-widht: min(20vw,60px);
+    --spacing-lion-widht: min(64px,20vw);
+    --spacing-img-duck-width: min(60vw,375px); 
+    --inset-shadow-navbar: 6px 4px 0 var(--color-paynes-gray);
+    --inset-shadow-default: 4px 2px 0 var(--color-orchid-pink);
 }
+
+@layer components {
+  #btn-3d {
+    @apply bg-amaranth-pink p-[var(--spacing-button-padding)] rounded-full transition-all cursor-pointer text-lemon-chiffon;
+    box-shadow: var(--inset-shadow-default);
+  }
+  #btn-3d:hover {
+    @apply hover:translate-y-[-2px];
+  }
+  #btn-3d:active {
+    @apply active:translate-x-[4px] text-fuchsia-rose;
+    box-shadow: var(--inset-shadow-active);
+  }
+}
+
+.font-delius{
+  font-family: 'Delius Swash Caps', cursive;
+}
+.font-menlo{
+  font-family: Menlo, Monaco, 'Courier New', monospace;
+}
+

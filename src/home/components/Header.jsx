@@ -1,13 +1,27 @@
 import "../Home.css";
+import { Typewriter } from "react-simple-typewriter";
 
 function Header() {
   return (
-    <div>
-      <h1 className="pt-[var(--spacing-padding-title)] font-bold text-[min(6vw,30px)]">
+    <div className="flex flex-col text-center font-menlo">
+      <h1 className="text-[min(6vw,30px)] text-white mb-4">
         hey there, I'm Louise!
       </h1>
-      <p className="text-[min(4vw,20px)]">Back-end Developer by profession</p>
-      <p className="text-[min(4vw,18px)]">Front-end Developer enthusiast</p>
+
+      <span className="text-[min(4vw,20px)] text-white">
+        <Typewriter
+          words={[
+            "Back-end Developer by profession",
+            "Front-end Developer enthusiast",
+          ]}
+          loop={false}
+          cursor
+          cursorStyle="|"
+          typeSpeed={70}
+          deleteSpeed={40}
+          delaySpeed={1500}
+        />
+      </span>
     </div>
   );
 }
