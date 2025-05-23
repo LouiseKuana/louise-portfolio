@@ -6,6 +6,7 @@ import Main from "./components/Main";
 import Resume from "./components/Resume";
 import MyWorks from "./components/MyWorks";
 import NavbarButton from "./components/NavbarButton";
+import RefButton from "./components/RefButton";
 import HeaderFlowers from "./components/HeaderFlowers";
 
 import { useState } from "react";
@@ -117,12 +118,12 @@ export default function Home() {
             icon={EnvelopeSimple}
             onClick={() => handleNavClick("email")}
           />
-          <NavbarButton
+          <RefButton
             title="Github"
             icon={GithubLogo}
             onClick={() => window.open("https://github.com", "_blank")}
           />
-          <NavbarButton
+          <RefButton
             title="LinkedIn"
             icon={LinkedinLogo}
             onClick={() => window.open("https://linkedin.com", "_blank")}
@@ -155,17 +156,20 @@ export default function Home() {
             {activeSection === "email" && (
               <p className="text-lg">email@email.com</p>
             )}
+            
             <Tooltip.Provider>
               <Tooltip.Root>
                 <Tooltip.Trigger asChild>
+
                   <motion.button
                     onClick={resetPage}
-                    className="btn-3d"
+                    className="btn-3d  my-4"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
                     <CaretDoubleDown className="w-6 h-6" />
                   </motion.button>
+
                 </Tooltip.Trigger>
                 <Tooltip.Portal>
                   <Tooltip.Content
