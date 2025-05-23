@@ -7,6 +7,7 @@
     --color-apple-green: #b0b952;
     --color-lemon-chiffon: #f2eeca;
     --color-fuchsia-rose: #cd517a;
+    --color-amaranth-purple:#ae325c;
     --color-amaranth-pink: #ef93b2;
     --color-orchid-pink: #f7b6cc;
     --color-verdigris:#569b99;
@@ -16,9 +17,9 @@
     --spacing-img-duck-width: min(60vw,375px); 
     --inset-shadow-navbar: 6px 4px 0 var(--color-paynes-gray);
     --inset-shadow-activeNav: 4px 2px 0 var(--color-fuchsia-rose);
-    --inset-shadow-activeRef: 4px 2px 0 var(--color-paynes-gray);
+    --inset-shadow-activeRef: 4px 2px 0 var(--color-amaranth-purple);
     --inset-shadow-navbarButton: 4px 2px 0 var(--color-orchid-pink);
-    --inset-shadow-refButton: 4px 2px 0 var(--color-amaranth-pink)
+    --inset-shadow-refButton: 4px 2px 0 var(--color-fuchsia-rose)
 }
 
 @layer components {
@@ -34,14 +35,14 @@
     box-shadow: var(--inset-shadow-activeNav);
   }
   .btn-ref {
-    @apply bg-fuchsia-rose p-[var(--spacing-button-padding)] rounded-full transition-all cursor-pointer text-lemon-chiffon;
-    box-shadow: var(--inset-shadow-navbarButton);
+    @apply bg-amaranth-pink p-[var(--spacing-button-padding)] rounded-full transition-all cursor-pointer text-fuchsia-rose;
+    box-shadow: var(--inset-shadow-refButton);
   }
   .btn-ref:hover {
     @apply hover:translate-y-[-2px];
   }
   .btn-ref:active {
-    @apply active:translate-x-[4px] text-blue-green;
+    @apply active:translate-x-[4px] text-amaranth-purple;
     box-shadow: var(--inset-shadow-activeRef);
   }
 }

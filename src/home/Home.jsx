@@ -135,7 +135,7 @@ export default function Home() {
       <AnimatePresence>
         {activeSection && !isAnimating && (
           <motion.div
-            className="mt-24 sm:mt-24 md:mt-32 lg:mt-40 text-center px-4 max-w-xl"
+            className="mt-30 lg:mt-35 text-center px-4 max-w-4xl"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 30 }}
@@ -146,8 +146,8 @@ export default function Home() {
             )}
             {activeSection === "works" && !isAnimating && (
               <div>
-                <p className="text-lg text-pink-700 mb-4 font-delius">
-                  Veja meus projetos fofinhos 💖
+                <p className="text-lg text-pink-700 font-delius">
+                  {/* Veja meus projetos fofinhos 💖 */}
                 </p>
 
                 <MyWorks />

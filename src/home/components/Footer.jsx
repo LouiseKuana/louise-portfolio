@@ -23,7 +23,7 @@ function Footer() {
           src="src/assets/lionFlower.gif"
           alt="Lion Flower left side"
         ></img>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center font-menlo">
           <p className="flex">
             Made with{" "}
             <Heart
