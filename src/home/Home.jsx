@@ -6,6 +6,7 @@ import Main from "./components/Main";
 import Resume from "./components/Resume";
 import MyWorks from "./components/MyWorks";
 import NavbarButton from "./components/NavbarButton";
+import HeaderFlowers from "./components/HeaderFlowers";
 
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
@@ -44,6 +45,7 @@ export default function Home() {
 
   return (
     <div className="min-h-[100svh] flex flex-col items-center bg-apple-green dark:bg-reseda-green relative overflow-x-hidden">
+      <HeaderFlowers />
       {/* NAVBAR ANIMADA - inicia no meio da tela e sobe */}
       <motion.div
         className="w-full flex flex-col justify-center items-center z-30
