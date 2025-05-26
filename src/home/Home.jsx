@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Main from "./components/Main";
 import Resume from "./components/Resume";
 import MyWorks from "./components/MyWorks";
+import ContactMe from "./components/ContactMe";
 import NavbarButton from "./components/NavbarButton";
 import RefButton from "./components/RefButton";
 import HeaderFlowers from "./components/HeaderFlowers";
@@ -114,7 +115,7 @@ export default function Home() {
             onClick={() => handleNavClick("works")}
           />
           <NavbarButton
-            title="Email"
+            title="Contact Me"
             icon={EnvelopeSimple}
             onClick={() => handleNavClick("email")}
           />
@@ -149,12 +150,11 @@ export default function Home() {
                 <p className="text-lg text-pink-700 font-delius">
                   {/* Veja meus projetos fofinhos 💖 */}
                 </p>
-
                 <MyWorks />
               </div>
             )}
             {activeSection === "email" && (
-              <p className="text-lg">email@email.com</p>
+             <ContactMe />
             )}
             
             <Tooltip.Provider>
