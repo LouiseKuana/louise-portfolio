@@ -17,7 +17,7 @@ export default function ContactMe() {
 
   return (
     <>
-      <div className="flex flex-col text-center justify-center items-center font-menlo w-[420px] px-4">
+      <div className="flex flex-col text-center justify-center items-center font-menlo w-[min(98vw,420px)] px-4">
         <h1 className="text-xl text-white mb-2 font-bold">
           Got something to say?
         </h1>
