@@ -10,16 +10,18 @@
     --color-amaranth-purple:#ae325c;
     --color-amaranth-pink: #ef93b2;
     --color-orchid-pink: #f7b6cc;
+    --color-lavender-blush: #fdedf2;
     --color-verdigris:#569b99;
     --color-xanthous: #fbb73b;
+    --inset-shadow: 4px 2px 0 var(--color-orchid-pink);
 }
 
 
 .custom-swiper-button-prev,
 .custom-swiper-button-next {
-  color: #f472b6; /* cor rosa kawaii */
+  color: var(--color-amaranth-pink); /* cor rosa kawaii */
   font-size: 1.8rem;
-  background-color: #fce7f3; /* rosa claro */
+  /* background-color: var(--color-lavender-blush); rosa claro */
   border-radius: 50%;
   width: 2.8rem;
   height: 2.8rem;
@@ -30,14 +32,15 @@
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
-  box-shadow: 0 0 8px #fbcfe8;
+  /* box-shadow: 0 0 8px #fbcfe8; */
   transition: background-color 0.3s;
   z-index: 10;
 }
 
 .custom-swiper-button-prev:hover,
 .custom-swiper-button-next:hover {
-  background-color: #f9a8d4;
+  color: var(--color-orchid-pink);
+  /* box-shadow: var(--inset-shadow); */
 }
 
 .custom-swiper-button-prev {

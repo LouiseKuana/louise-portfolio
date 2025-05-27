@@ -5,8 +5,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "../styles/MyWorks.css";
 
-import { Heart, Star } from "phosphor-react";
-
 export default function MyWorks() {
   const works = [
     {
@@ -30,10 +28,13 @@ export default function MyWorks() {
   ];
 
   return (
-    <div className="w-full max-w-4xl mx-auto px-4">
-      <h1 className="font-menlo text-2xl mb-6 text-lemon-chiffon">
-        Meus Trabalhos Kawaii
+    <div className="w-[min(98vw,420px)] flex flex-col mx-auto font-menlo">
+      <h1 className="text-xl text-white mb-2 font-bold">
+        Tiny projects, big dreams
       </h1>
+      <p className="text-xs text-lemon-chiffon mb-2 italic">
+        This is just the beginning… stay cozy and curious
+      </p>
       <Swiper
         modules={[Navigation]}
         navigation={{
@@ -50,17 +51,17 @@ export default function MyWorks() {
               href={work.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-48 md:w-80 aspect-[3/4] bg-pink-100 border-4 border-pink-200 rounded-3xl p-3 hover:shadow-pink-300 transition-all duration-300 flex flex-col items-center mx-auto"
+              className="w-48 md:w-80 aspect-[3/4] bg-lavender-blush border-4 border-amaranth-pink rounded-3xl p-3 hover:shadow-pink-300 transition-all duration-300 flex flex-col items-center mx-auto"
             >
               <img
                 src={work.image}
                 alt={work.title}
                 className="w-full h-auto object-cover rounded-2xl mb-2 shadow-md"
               />
-              <h3 className="text-lg font-bold text-pink-700 font-kawaii mb-1 text-center">
+              <h3 className="text-lg font-bold text-fuchsia-rose font-kawaii mb-1 text-center">
                 {work.title}
               </h3>
-              <p className="text-pink-600 text-xs text-center">
+              <p className="text-fuchsia-rose text-xs text-center">
                 {work.description}
               </p>
             </a>
