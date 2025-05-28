@@ -17,12 +17,12 @@ export default function ContactMe() {
 
   return (
     <>
-      <div className="flex flex-col text-center justify-center items-center font-menlo w-[min(98vw,420px)] px-4">
-        <h1 className="text-xl text-white mb-2 font-bold">
+      <div className="flex flex-col text-center justify-center items-center font-menlo w-[min(98vw,420px)]">
+        <h1 className="text-xl text-white mb-1 font-bold">
           Got something to say?
         </h1>
         <div className="flex flex-row items-center mb-2">
-          <p className="text-[min(3vw,12px)] text-white">
+          <p className="text-xs md:text-base text-white">
             Whether it’s a kind word, a curious question, or just a little hello
             — your message is always welcome in my inbox
             <span className="inline-flex items-center align-middle ml-1">
@@ -37,11 +37,10 @@ export default function ContactMe() {
             </span>
           </p>
         </div>
-
         <img
           src="/src/assets/emailDuck.gif"
           alt="Duck with email icon"
-          className="w-[min(50vw,230px)] mx-auto"
+          className="w-[min(45vw,230px)] mx-auto"
         ></img>
 
         <Tooltip.Provider delayDuration={200}>
@@ -69,7 +68,7 @@ export default function ContactMe() {
 
               <Tooltip.Portal>
                 <Tooltip.Content
-                  className="bg-apple-green dark:bg-reseda-green text-lemon-chiffon text-xs rounded-xl px-3 py-2 shadow-lg font-menlo animate-fade-in z-50 border border-lemon-chiffon"
+                  className="bg-reseda-green text-lemon-chiffon text-xs rounded-xl px-3 py-2 shadow-lg font-menlo animate-fade-in z-50 border border-lemon-chiffon"
                   side="top"
                   align="center"
                   sideOffset={8}
