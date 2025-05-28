@@ -6,7 +6,7 @@ export default function About() {
     <>
       <div className="flex flex-col font-menlo text-white items-center justify-center text-center w-[min(90vw,520px)]">
         <div className="flex items-center justify-center gap-2 md:gap-6 flex-rap md:mb-6">
-          {/* Figura do lado esquerdo */}
+          {/* left side */}
           <div>
             <img
               src="src/assets/louiseDraw.png"
@@ -22,11 +22,13 @@ export default function About() {
             </div>
           </div>
 
-          {/* Texto do lado direito */}
+          {/* right side */}
           <div className="text-white text-center">
             <h2 className="text-xl font-bold">Louise Akemi Kuana</h2>
           </div>
         </div>
+
+        {/* section above */}
         <section className="space-y-1 md:space-y-4 text-white text-sm">
           <div>
             <h3 className="text-base md:text-lg font-semibold text-orchid-pink">
@@ -60,7 +62,7 @@ export default function About() {
               </span>
               Fun fact
             </h3>
-            <p className="text-xs md:text-base"> 
+            <p className="text-xs md:text-base">
               Crochet, cooking, and nature walks keep me busy when I’m offline.
               I like to keep my mind active by learning new stuff whenever I
               can.
