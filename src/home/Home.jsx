@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Main from "./components/Main";
 import Resume from "./components/Resume";
+import About from "./components/About";
 import MyWorks from "./components/MyWorks";
 import ContactMe from "./components/ContactMe";
 import NavbarButton from "./components/NavbarButton";
@@ -46,7 +47,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-[100svh] flex flex-col items-center bg-apple-green dark:bg-reseda-green relative overflow-x-hidden">
+    <div className="min-h-[100svh] flex flex-col items-center bg-reseda-green relative overflow-x-hidden">
       <HeaderFlowers />
       {/* NAVBAR ANIMADA - inicia no meio da tela e sobe */}
       <motion.div
@@ -122,12 +123,12 @@ export default function Home() {
           <RefButton
             title="Github"
             icon={GithubLogo}
-            onClick={() => window.open("https://github.com", "_blank")}
+            onClick={() => window.open("https://github.com/LouiseKuana", "_blank")}
           />
           <RefButton
             title="LinkedIn"
             icon={LinkedinLogo}
-            onClick={() => window.open("https://linkedin.com", "_blank")}
+            onClick={() => window.open("https://www.linkedin.com/in/louise-kuana/", "_blank")}
           />
         </motion.nav>
       </motion.div>
@@ -142,25 +143,17 @@ export default function Home() {
             exit={{ opacity: 0, y: 30 }}
             transition={{ duration: 0.6 }}
           >
-            {activeSection === "about" && (
-              <p className="text-lg">Sobre mim...</p>
-            )}
+            {activeSection === "about" && <About />}
             {activeSection === "works" && !isAnimating && (
               <div>
-                <p className="text-lg text-pink-700 font-delius">
-                  {/* Veja meus projetos fofinhos 💖 */}
-                </p>
                 <MyWorks />
               </div>
             )}
-            {activeSection === "email" && (
-             <ContactMe />
-            )}
-            
+            {activeSection === "email" && <ContactMe />}
+
             <Tooltip.Provider>
               <Tooltip.Root>
                 <Tooltip.Trigger asChild>
-
                   <motion.button
                     onClick={resetPage}
                     className="btn-3d  my-4"
@@ -169,7 +162,6 @@ export default function Home() {
                   >
                     <CaretDoubleDown className="w-6 h-6" />
                   </motion.button>
-
                 </Tooltip.Trigger>
                 <Tooltip.Portal>
                   <Tooltip.Content
