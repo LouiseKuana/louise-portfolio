@@ -1,7 +1,7 @@
-import "../Home.css";
+import "../styles/global.css";
 import { Heart } from "phosphor-react";
 
-function Footer() {
+export default function Footer() {
   const currentYear = new Date().getFullYear();
   return (
     <>
@@ -45,4 +45,3 @@ function Footer() {
   );
 }
 
-export default Footer;

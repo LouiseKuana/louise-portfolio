@@ -2,8 +2,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import "../styles/MyWorks.css";
-import { EggCrack, BookOpen, Warning } from "phosphor-react";
+import "../styles/global.css";
+import { EggCrack, BookOpen, Warning, CaretCircleLeft, CaretCircleRight} from "phosphor-react";
 
 export default function MyWorks() {
   const works = [
@@ -45,8 +45,8 @@ export default function MyWorks() {
       <Swiper
         modules={[Navigation]}
         navigation={{
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: ".custom-swiper-button-next",
+          prevEl: ".custom-swiper-button-prev",
         }}
         spaceBetween={10}
         slidesPerView={1}
@@ -98,8 +98,12 @@ export default function MyWorks() {
         ))}
 
         {/* Botões de navegação personalizados */}
-        <div className="swiper-button-prev custom-swiper-button-prev"></div>
-        <div className="swiper-button-next custom-swiper-button-next"></div>
+        <div className="custom-swiper-button-prev">
+          <CaretCircleLeft size={50}/>
+        </div>
+        <div className="custom-swiper-button-next">
+            <CaretCircleRight size={50}/>
+        </div>
       </Swiper>
     </div>
   );

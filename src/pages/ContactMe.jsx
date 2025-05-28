@@ -1,8 +1,8 @@
 import { Sparkle, EnvelopeSimple, CheckCircle } from "phosphor-react";
 import React, { useState } from "react";
-import EmailButton from "./EmailButton";
+import EmailButton from "../components/EmailButton";
 import * as Tooltip from "@radix-ui/react-tooltip";
-import "../Home.css";
+import "../styles/global.css";
 
 export default function ContactMe() {
   const email = "louisekuana@gmail.com";

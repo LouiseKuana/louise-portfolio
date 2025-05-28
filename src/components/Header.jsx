@@ -1,4 +1,4 @@
-import "../Home.css";
+import "../styles/global.css";
 import { Typewriter } from "react-simple-typewriter";
 
 export default function Header() {

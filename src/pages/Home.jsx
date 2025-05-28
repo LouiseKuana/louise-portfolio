@@ -1,19 +1,16 @@
-import "./Home.css";
+import "../styles/global.css";
 
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Main from "./components/Main";
-import Resume from "./components/Resume";
-import About from "./components/About";
-import MyWorks from "./components/MyWorks";
-import ContactMe from "./components/ContactMe";
-import NavbarButton from "./components/NavbarButton";
-import RefButton from "./components/RefButton";
-import HeaderFlowers from "./components/HeaderFlowers";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import About from "./About";
+import MyWorks from "./MyWorks";
+import ContactMe from "./ContactMe";
+import NavbarButton from "../components/NavbarButton";
+import RefButton from "../components/RefButton";
+import HeaderFlowers from "../components/HeaderFlowers";
 
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Typewriter } from "react-simple-typewriter";
 import * as Tooltip from "@radix-ui/react-tooltip";
 import {
   User,

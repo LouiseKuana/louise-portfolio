@@ -1,15 +1,15 @@
-import "../Home.css";
+import "../styles/global.css";
 import * as Tooltip from "@radix-ui/react-tooltip";
 
-export default function NavbarButton({ title, icon: Icon, onClick }) {
+export default function RefButton({ title, icon: Icon, onClick }) {
   return (
     <>
       <Tooltip.Provider>
         <Tooltip.Root>
           <Tooltip.Trigger asChild>
             <button
-              className="btn-3d"
-              id="btn-navbar"
+              className="btn-ref"
+              id="btn-ref"
               onClick={onClick}
             >
               <Icon className="w-6 h-6 " />

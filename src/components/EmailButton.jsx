@@ -1,4 +1,4 @@
-import "../Home.css";
+import "../styles/global.css";
 import { ChatCircleText } from "phosphor-react";
 
 export default function EmailButton() {

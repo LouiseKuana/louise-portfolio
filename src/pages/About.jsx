@@ -1,4 +1,4 @@
-import "../Home.css";
+import "../styles/global.css";
 import { Laptop, Flower, Sparkle } from "phosphor-react";
 
 export default function About() {
