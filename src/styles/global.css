@@ -47,20 +47,31 @@
     @apply active:translate-x-[4px] text-amaranth-purple;
     box-shadow: var(--inset-shadow-activeRef);
   }
-  .photo {
+
+  .profile-photo {
     @apply w-25 h-25 rounded-full overflow-hidden border-4 border-lemon-chiffon;
   }
 
   .custom-swiper-button-prev,
   .custom-swiper-button-next {
     color: var(--color-amaranth-pink);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 10;
   }
-
+  .custom-swiper-button-prev {
+    left: 0.5rem;
+  }
+  .custom-swiper-button-next {
+    right: 0.5rem;
+  }
   .custom-swiper-button-prev:hover,
   .custom-swiper-button-next:hover {
     color: var(--color-orchid-pink);
   }
-
   .custom-swiper-button-prev.swiper-button-disabled,
   .custom-swiper-button-next.swiper-button-disabled {
     opacity: 0.4;

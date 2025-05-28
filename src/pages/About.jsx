@@ -13,7 +13,7 @@ export default function About() {
               alt="Louise draw"
               className="hidden md:block md:relative scale-x-[-1] w-[min(50vw,200px)]"
             />
-            <div className="photo md:absolute md:-translate-y-20 md:-translate-x-4">
+            <div className="profile-photo md:absolute md:-translate-y-20 md:-translate-x-4">
               <img
                 src="src/assets/louise.jpg"
                 alt="Minha foto"
