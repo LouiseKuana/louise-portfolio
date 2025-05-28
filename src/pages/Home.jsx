@@ -163,7 +163,7 @@ export default function Home() {
                 <Tooltip.Portal>
                   <Tooltip.Content
                     side="bottom"
-                    className="bg-apple-green dark:bg-reseda-green text-lemon-chiffon text-xs rounded-xl px-3 py-2 shadow-lg font-menlo animate-fade-in z-50 border border-lemon-chiffon"
+                    className="bg-reseda-green text-lemon-chiffon text-xs rounded-xl px-3 py-2 shadow-lg font-menlo animate-fade-in z-50 border border-lemon-chiffon"
                     sideOffset={8}
                   >
                     Back Home
