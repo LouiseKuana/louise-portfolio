@@ -19,7 +19,7 @@
     --inset-shadow-activeNav: 4px 2px 0 var(--color-fuchsia-rose);
     --inset-shadow-activeRef: 4px 2px 0 var(--color-amaranth-purple);
     --inset-shadow-navbarButton: 4px 2px 0 var(--color-orchid-pink);
-    --inset-shadow-refButton: 4px 2px 0 var(--color-fuchsia-rose)
+    --inset-shadow-refButton: 4px 2px 0 var(--color-fuchsia-rose);
 }
 
 @layer components {
@@ -44,6 +44,9 @@
   .btn-ref:active {
     @apply active:translate-x-[4px] text-amaranth-purple;
     box-shadow: var(--inset-shadow-activeRef);
+  }
+  .photo {
+    @apply w-25 h-25 rounded-full overflow-hidden border-4 border-lemon-chiffon;
   }
 }
 
