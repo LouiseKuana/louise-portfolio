@@ -91,7 +91,7 @@ export default function Home() {
                 </motion.header>
 
                 <motion.img
-                  src="/src/assets/louise+duck.gif"
+                  src="/src/assets/louiseAndDuck.gif"
                   alt="GIF animado"
                   className="w-[min(76vw,375px)] mx-auto"
                   initial={{ opacity: 0, y: 20 }}
