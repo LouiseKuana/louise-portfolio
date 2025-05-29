@@ -1,5 +1,5 @@
 import { Sparkle, EnvelopeSimple, CheckCircle } from "phosphor-react";
-import React, { useState } from "react";
+import { useState } from "react";
 import EmailButton from "../components/EmailButton";
 import * as Tooltip from "@radix-ui/react-tooltip";
 import "../styles/global.css";
@@ -22,7 +22,7 @@ export default function ContactMe() {
           Got something to say?
         </h2>
         <div className="flex flex-row items-center mb-2">
-          <p className="text-xs md:text-base text-white">
+          <p className="contact-paragraph ">
             Whether it’s a kind word, a curious question, or just a little hello
             — your message is always welcome in my inbox
             <span className="icon-inline-container">
@@ -55,11 +55,11 @@ export default function ContactMe() {
                 >
                   <span className="text-orchid-pink underline">{email}</span>
                   {copied && (
-                    <span className="ml-2 text-orchid-pink font-semibold no-underline inline-flex">
+                    <span className="inline-flex ml-2 text-orchid-pink font-semibold no-underline">
                       Copy!
                       <CheckCircle
                         weight="fill"
-                        className="text-orchid-pink text-[min(4vw,16px)] ml-[2px]"
+                        className="text-orchid-pink icon-inline"
                       />
                     </span>
                   )}
@@ -68,13 +68,13 @@ export default function ContactMe() {
 
               <Tooltip.Portal>
                 <Tooltip.Content
-                  className="bg-reseda-green text-lemon-chiffon text-xs rounded-xl px-3 py-2 shadow-lg font-menlo animate-fade-in z-50 border border-lemon-chiffon"
+                  className="custom-button-title animate-fade-in"
                   side="top"
                   align="center"
                   sideOffset={8}
                 >
                   Click to copy email
-                  <Tooltip.Arrow className="fill-lemon-chiffon" />
+                  <Tooltip.Arrow className="custom-button-title-arrow" />
                 </Tooltip.Content>
               </Tooltip.Portal>
             </Tooltip.Root>

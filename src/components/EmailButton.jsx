@@ -12,7 +12,7 @@ export default function EmailButton() {
       >
         <span className="flex flex-inline">
           Click to send a tiny hello{" "}
-          <ChatCircleText className=" mx-[2px] w-6 h-6" />
+          <ChatCircleText className=" mx-1 custom-size-button-icon" />
         </span>
       </button>
     </>

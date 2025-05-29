@@ -12,17 +12,17 @@ export default function NavbarButton({ title, icon: Icon, onClick }) {
               id="btn-navbar"
               onClick={onClick}
             >
-              <Icon className="w-6 h-6 " />
+              <Icon className="custom-size-button-icon" />
             </button>
           </Tooltip.Trigger>
           <Tooltip.Portal>
             <Tooltip.Content
               side="top"
-              className="bg-reseda-green text-lemon-chiffon text-xs rounded-xl px-3 py-2 shadow-lg font-menlo animate-fade-in z-50 border border-lemon-chiffon"
+              className="custom-button-title animate-fade-in"
               sideOffset={8}
             >
               {title}
-              <Tooltip.Arrow className="fill-lemon-chiffon" />
+              <Tooltip.Arrow className="custom-button-title-arrow" />
             </Tooltip.Content>
           </Tooltip.Portal>
         </Tooltip.Root>

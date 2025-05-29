@@ -29,7 +29,7 @@ export default function About() {
         </div>
 
         {/* section above */}
-        <section className="space-y-1 md:space-y-4 text-white text-sm">
+        <section className="space-y-1 md:space-y-4">
           <div>
             <h3 className="about-heading">
               <span className="icon-inline-container">

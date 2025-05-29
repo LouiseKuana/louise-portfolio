@@ -34,25 +34,23 @@
     @apply text-xl font-bold text-white text-center;
   }
 
+  /* Icons inline */
   .icon-inline-container {
     @apply inline-flex items-center align-middle ml-1;
   }
-
   .icon-inline {
     @apply text-[min(4vw,16px)] mx-1;
   }
 
-  /* About Page */
-  .about-heading {
-    @apply text-base md:text-lg font-semibold text-orchid-pink;
+  /* Custom Buttons */
+  .custom-button-title {
+    @apply bg-reseda-green text-lemon-chiffon text-xs rounded-xl px-3 py-2 shadow-lg font-menlo z-50 border border-lemon-chiffon;
   }
-
-  .about-paragraph {
-    @apply text-xs md:text-base;
+  .custom-button-title-arrow {
+    @apply fill-lemon-chiffon;
   }
-
-  .profile-photo {
-    @apply w-25 h-25 rounded-full overflow-hidden border-4 border-lemon-chiffon;
+  .custom-size-button-icon {
+    @apply w-6 h-6;
   }
 
   /* Navbar Buttons */
@@ -77,6 +75,19 @@
   .btn-ref:active {
     @apply active:translate-x-[4px] text-amaranth-purple;
     box-shadow: var(--inset-shadow-activeRef);
+  }
+
+  /* About Page */
+  .about-heading {
+    @apply text-base md:text-lg font-semibold text-orchid-pink;
+  }
+
+  .about-paragraph {
+    @apply text-xs md:text-base text-white;
+  }
+
+  .profile-photo {
+    @apply w-25 h-25 rounded-full overflow-hidden border-4 border-lemon-chiffon;
   }
 
   /* MyWorks Page*/
@@ -118,5 +129,10 @@
   .custom-swiper-button-next.swiper-button-disabled {
     opacity: 0.4;
     pointer-events: none;
+  }
+
+  /* ContactMe Page */
+  .contact-paragraph {
+    @apply text-xs md:text-base text-white;
   }
 }

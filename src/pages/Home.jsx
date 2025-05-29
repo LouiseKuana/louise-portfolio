@@ -157,17 +157,17 @@ export default function Home() {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <CaretDoubleDown className="w-6 h-6" />
+                    <CaretDoubleDown className="custom-size-button-icon" />
                   </motion.button>
                 </Tooltip.Trigger>
                 <Tooltip.Portal>
                   <Tooltip.Content
                     side="bottom"
-                    className="bg-reseda-green text-lemon-chiffon text-xs rounded-xl px-3 py-2 shadow-lg font-menlo animate-fade-in z-50 border border-lemon-chiffon"
+                    className="custom-button-title animate-fade-in"
                     sideOffset={8}
                   >
                     Back Home
-                    <Tooltip.Arrow className="fill-lemon-chiffon" />
+                    <Tooltip.Arrow className="custom-button-title-arrow" />
                   </Tooltip.Content>
                 </Tooltip.Portal>
               </Tooltip.Root>
