@@ -13,9 +13,7 @@
   --color-lavender-blush: #fdedf2;
   --color-verdigris: #569b99;
   --color-xanthous: #fbb73b;
-  --spacing-padding-title: 3rem;
   --spacing-lion-widht: min(64px, 20vw);
-  --spacing-img-duck-width: min(60vw, 375px);
   --spacing-button-padding: min(3vw, 12px);
   --inset-shadow-navbar: 6px 4px 0 var(--color-paynes-gray);
   --inset-shadow-activeNav: 4px 2px 0 var(--color-fuchsia-rose);
@@ -29,7 +27,6 @@
   .page-container {
     @apply flex flex-col text-center justify-center items-center font-menlo;
   }
-
   .page-heading {
     @apply text-xl font-bold text-white text-center;
   }
@@ -94,11 +91,9 @@
   .about-heading {
     @apply text-base md:text-lg font-semibold text-orchid-pink;
   }
-
   .about-paragraph {
     @apply text-xs md:text-base text-white;
   }
-
   .profile-photo {
     @apply w-25 h-25 rounded-full overflow-hidden border-4 border-lemon-chiffon;
   }
