@@ -25,16 +25,16 @@ export default function Home() {
   const [activeSection, setActiveSection] = useState(null);
   const [isAnimating, setIsAnimating] = useState(false);
 
-  // Ao clicar no menu, inicia animação da navbar + gif subindo
+  // When clicking on the menu, the navbar animation starts + gif rising
   const handleNavClick = (section) => {
     setIsAnimating(true);
     setTimeout(() => {
       setActiveSection(section);
       setIsAnimating(false);
-    }, 700); // duração da animação
+    }, 700); // animation duration
   };
 
-  // Voltar para tela inicial
+  // return to home screen
   const resetPage = () => {
     setIsAnimating(true);
     setTimeout(() => {
@@ -45,8 +45,10 @@ export default function Home() {
 
   return (
     <div className="min-h-[100svh] flex flex-col items-center bg-reseda-green relative overflow-x-hidden">
+      {/* HEADER FLOWERS */}
       <HeaderFlowers />
-      {/* NAVBAR ANIMADA - inicia no meio da tela e sobe */}
+
+      {/* NAVBAR ANIMATED - starts in the middle of the screen and goes up */}
       <motion.div
         className="w-full flex flex-col justify-center items-center z-30
              fixed left-0 right-0
@@ -60,9 +62,9 @@ export default function Home() {
         }}
         transition={{ type: "spring", stiffness: 70, damping: 20 }}
       >
-        {/* GIF + HEADER - sobem junto com a navbar, GIF desaparece no fim */}
+        {/* GIF + HEADER - go up with the navbar, GIF disappears at the end */}
         <motion.div
-          className="flex flex-col items-center mt-10 sm:mt-8 md:mt-10 px-4 max-w-xl w-full"
+          className="flex flex-col items-center mt-10 px-4 max-w-xl w-full"
           initial={false}
           animate={{
             y: isAnimating || activeSection ? -100 : 0,
@@ -84,12 +86,12 @@ export default function Home() {
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.3 }}
                 >
+                  {/* HEADER */}
                   <Header />
                 </motion.header>
-
                 <motion.img
                   src="/src/assets/louiseAndDuck.gif"
-                  alt="GIF animado"
+                  alt="Animated GIF"
                   className="w-[min(76vw,375px)] mx-auto"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -101,6 +103,7 @@ export default function Home() {
           </AnimatePresence>
         </motion.div>
 
+        {/* NAVBAR */}
         <motion.nav className="flex gap-4 px-6 py-3 bg-blue-green inset-shadow-navbar rounded-full cursor-pointer">
           <NavbarButton
             title="About"
@@ -120,17 +123,21 @@ export default function Home() {
           <RefButton
             title="Github"
             icon={GithubLogo}
-            onClick={() => window.open("https://github.com/LouiseKuana", "_blank")}
+            onClick={() =>
+              window.open("https://github.com/LouiseKuana", "_blank")
+            }
           />
           <RefButton
             title="LinkedIn"
             icon={LinkedinLogo}
-            onClick={() => window.open("https://www.linkedin.com/in/louise-kuana/", "_blank")}
+            onClick={() =>
+              window.open("https://www.linkedin.com/in/louise-kuana/", "_blank")
+            }
           />
         </motion.nav>
       </motion.div>
 
-      {/* CONTEÚDO DA SEÇÃO - aparece após animação */}
+      {/* SECTION CONTENT - appears after animation */}
       <AnimatePresence>
         {activeSection && !isAnimating && (
           <motion.div
@@ -141,11 +148,7 @@ export default function Home() {
             transition={{ duration: 0.6 }}
           >
             {activeSection === "about" && <About />}
-            {activeSection === "works" && !isAnimating && (
-              <div>
-                <MyWorks />
-              </div>
-            )}
+            {activeSection === "works" && !isAnimating && <MyWorks />}
             {activeSection === "email" && <ContactMe />}
 
             <Tooltip.Provider>
