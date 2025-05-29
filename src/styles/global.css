@@ -79,6 +79,20 @@
     box-shadow: var(--inset-shadow-activeRef);
   }
 
+  /* MyWorks Page*/
+  .card-container {
+    @apply w-[min(45vw,320px)] aspect-[3/4] bg-lavender-blush border-4 border-amaranth-pink rounded-3xl p-3 flex flex-col items-center mx-auto;
+  }
+  .card-image {
+    @apply w-full h-auto object-cover rounded-2xl mb-2 shadow-md;
+  }
+  .card-title {
+    @apply text-base md:text-lg font-bold text-fuchsia-rose mb-1 text-center;
+  }
+  .card-description {
+    @apply text-fuchsia-rose text-xs text-center;
+  }
+
   /* Swiper in My Works Page */
   .custom-swiper-button-prev,
   .custom-swiper-button-next {

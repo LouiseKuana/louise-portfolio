@@ -42,6 +42,8 @@ export default function MyWorks() {
       <p className="text-xs text-lemon-chiffon mb-2 italic">
         This is just the beginning… stay cozy and curious
       </p>
+
+      {/* Carousel */}
       <Swiper
         modules={[Navigation]}
         navigation={{
@@ -59,37 +61,37 @@ export default function MyWorks() {
                 href={work.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-[min(45vw,320px)] aspect-[3/4] bg-lavender-blush border-4 border-amaranth-pink rounded-3xl p-3 hover:shadow-pink-300 transition-all duration-300 flex flex-col items-center mx-auto"
+                className="card-container hover:shadow-pink-300 transition-all duration-300 "
               >
                 <img
                   src={work.image}
                   alt={work.title}
-                  className="w-full h-auto object-cover rounded-2xl mb-2 shadow-md"
+                  className="card-image"
                 />
-                <h3 className="text-base md:text-lg font-bold text-fuchsia-rose mb-1 text-center">
+                <h3 className="card-title">
                   <span className="icon-inline-container">
                     {work.icon}
                   </span>
                   {work.title}
                 </h3>
-                <p className="text-fuchsia-rose text-xs text-center">
+                <p className="card-description">
                   {work.description}
                 </p>
               </a>
             ) : (
-              <div className="w-[min(45vw,320px)] aspect-[3/4] bg-lavender-blush border-4 border-amaranth-pink rounded-3xl p-3 flex flex-col items-center mx-auto opacity-60 cursor-not-allowed">
+              <div className="card-container opacity-60 cursor-not-allowed">
                 <img
                   src={work.image}
                   alt={work.title}
-                  className="w-full h-auto object-cover rounded-2xl mb-2 shadow-md"
+                  className="card-image"
                 />
-                <h3 className="text-base md:text-lg font-bold text-fuchsia-rose mb-1 text-center">
+                <h3 className="card-title">
                   <span className="icon-inline-container">
                     {work.icon}
                   </span>
                   {work.title}
                 </h3>
-                <p className="text-fuchsia-rose text-xs text-center">
+                <p className="card-description">
                   {work.description}
                 </p>
               </div>
@@ -97,7 +99,7 @@ export default function MyWorks() {
           </SwiperSlide>
         ))}
 
-        {/* Botões de navegação personalizados */}
+        {/* Custom Navigation Buttons */}
         <div className="custom-swiper-button-prev">
           <CaretCircleLeft size={50}/>
         </div>
