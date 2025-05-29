@@ -63,7 +63,7 @@ export default function About() {
               Fun fact
             </h3>
             <p className="about-paragraph">
-              Crochet, cooking, and nature walks keep me busy when I’m offline.
+              Crochet, drawing, cooking, and nature walks keep me busy when I’m offline.
               I like to keep my mind active by learning new stuff whenever I
               can.
             </p>
