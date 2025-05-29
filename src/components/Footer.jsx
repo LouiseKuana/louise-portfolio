@@ -6,20 +6,20 @@ export default function Footer() {
   return (
     <>
       <img
-        className="hidden md:block fixed bottom-0 left-0 z-0 w-[min(25vw,340px)]"
+        className="custom-leafs-position left-0"
         src="src/assets/leafs.png"
         alt="Leaf left side"
       />
 
       <img
-        className="hidden md:block fixed bottom-0 right-0 scale-x-[-1] z-0 w-[min(25vw,340px)]"
+        className="custom-leafs-position right-0 scale-x-[-1] "
         src="src/assets/leafs.png"
         alt="Leaf right side"
       />
 
       <div className="items-center flex text-center text-[min(3vw,12px)] mt-auto py-4 text-white">
         <img
-          className="w-[var(--spacing-lion-widht)]"
+          className="custom-lion-flower-position"
           src="src/assets/lionFlower.gif"
           alt="Lion Flower left side"
         ></img>
@@ -36,7 +36,7 @@ export default function Footer() {
         </div>
 
         <img
-          className="w-[var(--spacing-lion-widht)]"
+          className="custom-lion-flower-position"
           src="src/assets/lionFlower.gif"
           alt="Lion Flower right side"
         ></img>
