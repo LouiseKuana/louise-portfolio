@@ -22,9 +22,40 @@
   --inset-shadow-activeRef: 4px 2px 0 var(--color-amaranth-purple);
   --inset-shadow-navbarButton: 4px 2px 0 var(--color-orchid-pink);
   --inset-shadow-refButton: 4px 2px 0 var(--color-fuchsia-rose);
+  --font-menlo: Menlo, Monaco, "Courier New", monospace;
 }
 
 @layer components {
+  .page-container {
+    @apply flex flex-col text-center justify-center items-center font-menlo;
+  }
+
+  .page-heading {
+    @apply text-xl font-bold text-white text-center;
+  }
+
+  .icon-inline-container {
+    @apply inline-flex items-center align-middle ml-1;
+  }
+
+  .icon-inline {
+    @apply text-[min(4vw,16px)] mx-1;
+  }
+
+  /* About Page */
+  .about-heading {
+    @apply text-base md:text-lg font-semibold text-orchid-pink;
+  }
+
+  .about-paragraph {
+    @apply text-xs md:text-base;
+  }
+
+  .profile-photo {
+    @apply w-25 h-25 rounded-full overflow-hidden border-4 border-lemon-chiffon;
+  }
+
+  /* Navbar Buttons */
   .btn-3d {
     @apply bg-amaranth-pink p-[var(--spacing-button-padding)] rounded-full transition-all cursor-pointer text-lemon-chiffon;
     box-shadow: var(--inset-shadow-navbarButton);
@@ -48,10 +79,7 @@
     box-shadow: var(--inset-shadow-activeRef);
   }
 
-  .profile-photo {
-    @apply w-25 h-25 rounded-full overflow-hidden border-4 border-lemon-chiffon;
-  }
-
+  /* Swiper in My Works Page */
   .custom-swiper-button-prev,
   .custom-swiper-button-next {
     color: var(--color-amaranth-pink);
@@ -76,9 +104,5 @@
   .custom-swiper-button-next.swiper-button-disabled {
     opacity: 0.4;
     pointer-events: none;
-  }
-
-  .font-menlo {
-    font-family: Menlo, Monaco, "Courier New", monospace;
   }
 }

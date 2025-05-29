@@ -9,7 +9,7 @@ export default function MyWorks() {
   const works = [
     {
       icon: (
-        <EggCrack className="text-fuchsia-rose mx-1 text-[min(4vw,16px)]" />
+        <EggCrack className="text-fuchsia-rose icon-inline" />
       ),
       title: "Coming soon",
       description: "Just a little patience — I'm working on it.",
@@ -18,7 +18,7 @@ export default function MyWorks() {
     },
     {
       icon: (
-        <BookOpen className="text-fuchsia-rose mx-1 text-[min(4vw,16px)]" />
+        <BookOpen className="text-fuchsia-rose icon-inline" />
       ),
       title: "Coming soon",
       description: "Just a little patience — I'm working on it.",
@@ -26,7 +26,7 @@ export default function MyWorks() {
       isAvailable: false,
     },
     {
-      icon: <Warning className="text-fuchsia-rose mx-1 text-[min(4vw,16px)]" />,
+      icon: <Warning className="text-fuchsia-rose icon-inline" />,
       title: "Coming soon",
       description: "Just a little patience — I'm working on it.",
       image: "src/assets/lionFlower.gif",
@@ -35,10 +35,10 @@ export default function MyWorks() {
   ];
 
   return (
-    <div className="w-[min(98vw,420px)] flex flex-col mx-auto font-menlo">
-      <h1 className="text-xl text-white mb-2 font-bold">
+    <div className="page-container w-[min(98vw,420px)] mx-auto">
+      <h2 className="page-heading mb-2">
         Tiny projects, big dreams
-      </h1>
+      </h2>
       <p className="text-xs text-lemon-chiffon mb-2 italic">
         This is just the beginning… stay cozy and curious
       </p>
@@ -67,7 +67,7 @@ export default function MyWorks() {
                   className="w-full h-auto object-cover rounded-2xl mb-2 shadow-md"
                 />
                 <h3 className="text-base md:text-lg font-bold text-fuchsia-rose mb-1 text-center">
-                  <span className="inline-flex items-center align-middle ml-1">
+                  <span className="icon-inline-container">
                     {work.icon}
                   </span>
                   {work.title}
@@ -84,7 +84,7 @@ export default function MyWorks() {
                   className="w-full h-auto object-cover rounded-2xl mb-2 shadow-md"
                 />
                 <h3 className="text-base md:text-lg font-bold text-fuchsia-rose mb-1 text-center">
-                  <span className="inline-flex items-center align-middle ml-1">
+                  <span className="icon-inline-container">
                     {work.icon}
                   </span>
                   {work.title}

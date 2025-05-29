@@ -17,22 +17,22 @@ export default function ContactMe() {
 
   return (
     <>
-      <div className="flex flex-col text-center justify-center items-center font-menlo w-[min(98vw,420px)]">
-        <h1 className="text-xl text-white mb-1 font-bold">
+      <div className="page-container w-[min(90vw,420px)]">
+        <h2 className="page-heading mb-1">
           Got something to say?
-        </h1>
+        </h2>
         <div className="flex flex-row items-center mb-2">
           <p className="text-xs md:text-base text-white">
             Whether it’s a kind word, a curious question, or just a little hello
             — your message is always welcome in my inbox
-            <span className="inline-flex items-center align-middle ml-1">
+            <span className="icon-inline-container">
               <Sparkle
                 weight="fill"
-                className="text-xanthous text-[min(4vw,16px)]"
+                className="text-xanthous icon-inline"
               />
               <EnvelopeSimple
                 weight="fill"
-                className="text-xanthous text-[min(4vw,16px)] ml-[2px]"
+                className="text-xanthous icon-inline"
               />
             </span>
           </p>

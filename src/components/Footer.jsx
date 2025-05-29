@@ -28,7 +28,7 @@ export default function Footer() {
             Made with{" "}
             <Heart
               weight="fill"
-              className="mx-[2px] text-fuchsia-rose dark:text-amaranth-pink text-[min(3vw,16px)]"
+              className="icon-inline text-amaranth-pink"
             />{" "}
             and matcha
           </p>
