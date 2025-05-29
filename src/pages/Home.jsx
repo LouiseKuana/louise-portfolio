@@ -124,14 +124,14 @@ export default function Home() {
             title="Github"
             icon={GithubLogo}
             onClick={() =>
-              window.open("https://github.com/LouiseKuana", "_blank")
+              window.open("https://github.com/LouiseKuana", "_blank", "noopener,noreferrer")
             }
           />
           <RefButton
             title="LinkedIn"
             icon={LinkedinLogo}
             onClick={() =>
-              window.open("https://www.linkedin.com/in/louise-kuana/", "_blank")
+              window.open("https://www.linkedin.com/in/louise-kuana/", "_blank", "noopener,noreferrer")
             }
           />
         </motion.nav>
