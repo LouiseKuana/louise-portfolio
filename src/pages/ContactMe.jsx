@@ -54,7 +54,7 @@ export default function ContactMe() {
                   onClick={copyToClipboard}
                   className="cursor-pointer inline-flex items-center"
                 >
-                  <span className="text-orchid-pink underline">{email}</span>
+                  <span id="email" className="text-orchid-pink underline">{email}</span>
                   {copied && (
                     <span className="inline-flex ml-2 text-orchid-pink font-semibold no-underline">
                       Copy!
