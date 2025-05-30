@@ -4,7 +4,7 @@ This is a space where I share my journey as a software developer, showcase proje
 ### 🔗 About this site
 I built this website to deepen my learning, improve my skills, and create a place where others in the tech community can get to know my work and my approach.
 
-### What you’ll find here
+### 🔎 What you’ll find here
 - **Design** — Handmade animations ✍️
 - **React and Vite** — For a fast and modern frontend development environment ⚡  
 - **Tailwind CSS** — For efficient, responsive styling with utility-first classes 🎨  
