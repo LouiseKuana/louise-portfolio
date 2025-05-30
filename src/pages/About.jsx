@@ -1,4 +1,6 @@
 import "../styles/global.css";
+import louiseDraw from "@assets/louiseDraw.png";
+import louisePhoto from "@assets/louise.jpg";
 import { Laptop, Flower, Sparkle } from "phosphor-react";
 
 export default function About() {
@@ -9,13 +11,13 @@ export default function About() {
           {/* left side */}
           <div>
             <img
-              src="src/assets/louiseDraw.png"
+              src={louiseDraw}
               alt="Louise draw"
               className="hidden md:block md:relative scale-x-[-1] w-[min(50vw,200px)]"
             />
             <div className="profile-photo md:absolute md:-translate-y-20 md:-translate-x-4">
               <img
-                src="src/assets/louise.jpg"
+                src={louisePhoto}
                 alt="Minha foto"
                 className="w-full h-full object-cover object-[50%_10%]"
               />

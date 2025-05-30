@@ -3,6 +3,7 @@ import { useState } from "react";
 import EmailButton from "../components/EmailButton";
 import * as Tooltip from "@radix-ui/react-tooltip";
 import "../styles/global.css";
+import emailDuck from "@assets/emailDuck.gif";
 
 export default function ContactMe() {
   const email = "louisekuana@gmail.com";
@@ -38,7 +39,7 @@ export default function ContactMe() {
           </p>
         </div>
         <img
-          src="/src/assets/emailDuck.gif"
+          src={emailDuck}
           alt="Duck with email icon"
           className="w-[min(45vw,230px)] mx-auto"
         ></img>

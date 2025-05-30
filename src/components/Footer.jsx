@@ -1,4 +1,6 @@
 import "../styles/global.css";
+import leafs from "@assets/leafs.png";
+import lionFlower from "@assets/lionFlower.gif";
 import { Heart } from "phosphor-react";
 
 export default function Footer() {
@@ -7,20 +9,20 @@ export default function Footer() {
     <>
       <img
         className="custom-leafs-position left-0"
-        src="src/assets/leafs.png"
+        src={leafs}
         alt="Leaf left side"
       />
 
       <img
         className="custom-leafs-position right-0 scale-x-[-1] "
-        src="src/assets/leafs.png"
+        src={leafs}
         alt="Leaf right side"
       />
 
       <div className="items-center flex text-center text-[min(3vw,12px)] mt-auto py-4 text-white">
         <img
           className="custom-lion-flower-position"
-          src="src/assets/lionFlower.gif"
+          src={lionFlower}
           alt="Lion Flower left side"
         ></img>
         <div className="flex flex-col items-center font-menlo">
@@ -37,7 +39,7 @@ export default function Footer() {
 
         <img
           className="custom-lion-flower-position"
-          src="src/assets/lionFlower.gif"
+          src={lionFlower}
           alt="Lion Flower right side"
         ></img>
       </div>

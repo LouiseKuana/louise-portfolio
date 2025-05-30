@@ -4,6 +4,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "../styles/global.css";
 import { EggCrack, BookOpen, Warning, CaretCircleLeft, CaretCircleRight} from "phosphor-react";
+import lionFlower from "@assets/lionFlower.gif";
 
 export default function MyWorks() {
   const works = [
@@ -13,7 +14,7 @@ export default function MyWorks() {
       ),
       title: "Coming soon",
       description: "Just a little patience — I'm working on it.",
-      image: "src/assets/lionFlower.gif",
+      image: lionFlower,
       isAvailable: false,
     },
     {
@@ -22,14 +23,14 @@ export default function MyWorks() {
       ),
       title: "Coming soon",
       description: "Just a little patience — I'm working on it.",
-      image: "src/assets/lionFlower.gif",
+      image: lionFlower,
       isAvailable: false,
     },
     {
       icon: <Warning className="text-fuchsia-rose icon-inline" />,
       title: "Coming soon",
       description: "Just a little patience — I'm working on it.",
-      image: "src/assets/lionFlower.gif",
+      image: lionFlower,
       isAvailable: false,
     },
   ];

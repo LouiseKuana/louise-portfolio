@@ -1,4 +1,5 @@
 import "../styles/global.css";
+import louiseAndDuck from "@assets/louiseAndDuck.gif";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -90,7 +91,7 @@ export default function Home() {
                   <Header />
                 </motion.header>
                 <motion.img
-                  src="/src/assets/louiseAndDuck.gif"
+                  src={louiseAndDuck}
                   alt="Animated GIF"
                   className="w-[min(76vw,375px)] mx-auto"
                   initial={{ opacity: 0, y: 20 }}
