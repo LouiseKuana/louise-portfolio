@@ -82,7 +82,7 @@ export default function ContactMe() {
           </div>
         </Tooltip.Provider>
 
-        <EmailButton/>
+        <EmailButton id="emailButton"/>
       </div>
     </>
   );

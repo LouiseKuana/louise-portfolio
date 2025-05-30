@@ -1,7 +1,7 @@
 import "../styles/global.css";
 import * as Tooltip from "@radix-ui/react-tooltip";
 
-export default function NavbarButton({ title, icon: Icon, onClick }) {
+export default function NavbarButton({id, title, icon: Icon, onClick }) {
   return (
     <>
       <Tooltip.Provider>
@@ -9,7 +9,7 @@ export default function NavbarButton({ title, icon: Icon, onClick }) {
           <Tooltip.Trigger asChild>
             <button
               className="btn-3d"
-              id="btn-navbar"
+              id={id}
               onClick={onClick}
             >
               <Icon className="custom-size-button-icon" />

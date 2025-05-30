@@ -107,21 +107,25 @@ export default function Home() {
         {/* NAVBAR */}
         <motion.nav className="flex gap-4 px-6 py-3 bg-blue-green inset-shadow-navbar rounded-full cursor-pointer">
           <NavbarButton
+            id="about"
             title="About"
             icon={User}
             onClick={() => handleNavClick("about")}
           />
           <NavbarButton
+            id="projects"
             title="My Projects"
             icon={FolderSimple}
             onClick={() => handleNavClick("works")}
           />
           <NavbarButton
+            id="contact"
             title="Contact Me"
             icon={EnvelopeSimple}
             onClick={() => handleNavClick("email")}
           />
           <RefButton
+            id="github"
             title="Github"
             icon={GithubLogo}
             onClick={() =>
@@ -129,6 +133,7 @@ export default function Home() {
             }
           />
           <RefButton
+            id="linkedIn"
             title="LinkedIn"
             icon={LinkedinLogo}
             onClick={() =>
@@ -156,6 +161,7 @@ export default function Home() {
               <Tooltip.Root>
                 <Tooltip.Trigger asChild>
                   <motion.button
+                    id="reset"
                     onClick={resetPage}
                     className="btn-3d  my-4"
                     whileHover={{ scale: 1.05 }}
