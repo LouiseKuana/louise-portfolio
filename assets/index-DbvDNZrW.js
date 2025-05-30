@@ -67,9 +67,9 @@ Error generating stack: `+s.message+`
         j.async = true;
         j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
         f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", ${Pg});
+      })(window, document, "script", "dataLayer",'${Pg}');
     `,document.head.appendChild(t);const i=document.createElement("noscript");i.innerHTML=`
-     ><iframe
+     <iframe
         src="https://www.googletagmanager.com/ns.html?id=${Pg}"
         height="0"
         width="0"
