@@ -18,14 +18,14 @@ export default function GTM() {
         j.async = true;
         j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
         f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", ${GTM_ID});
+      })(window, document, "script", "dataLayer",'${GTM_ID}');
     `;
     document.head.appendChild(script);
 
     // GTM iframe <body>
     const noscript = document.createElement("noscript");
     noscript.innerHTML = `
-     ><iframe
+     <iframe
         src="https://www.googletagmanager.com/ns.html?id=${GTM_ID}"
         height="0"
         width="0"
